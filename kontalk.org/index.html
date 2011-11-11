@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -46,12 +47,51 @@ function displayDiv(indexToDisplay) {
 	}
 }
 
+var before="first alpha release";
+var current="First alpha release available now on the Android Market."
+
+
+var montharray = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+
+function countdown(yr,m,d) {
+    theyear=yr;
+    themonth=m;
+    theday=d;
+    var span = document.getElementById('countdownText');
+    var today = new Date();
+    var todayy = today.getYear();
+    if (todayy < 1000)
+        todayy += 1900;
+    var todaym=today.getMonth();
+    var todayd=today.getDate();
+    var todayh=today.getHours();
+    var todaymin=today.getMinutes();
+    var todaysec=today.getSeconds();
+    var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec;
+    futurestring=montharray[m-1]+" "+d+", "+yr;
+    dd=Date.parse(futurestring)-Date.parse(todaystring);
+    dday=Math.floor(dd/(60*60*1000*24)*1);
+    dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
+    dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
+    dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
+    if(dday <= 0 && dhour <= 0 && dmin <= 0 && dsec <= 1) {
+        span.innerText = span.textContent = current;
+        return;
+    }
+    else {
+        txt = dday+ " days, "+dhour+" hours, "+dmin+" minutes, "+dsec+" seconds to " + before;
+        span.innerText = span.textContent = txt;
+    }
+    setTimeout("countdown(theyear,themonth,theday)",1000);
+}
+
+
 // -->
 </script>
 
 </head>
 
-<body>
+<body onload="countdown(2011,11,19)">
 
 <div style="margin-left: auto; margin-right: auto; text-align: center">
 
@@ -59,6 +99,8 @@ function displayDiv(indexToDisplay) {
 <h1>The Kontalk Messaging Project</h1>
 <h3>A new way of communicating.</h3>
 <h5>Coming soon. Stay tuned.</h5>
+
+<h3 id="countdownText"></h3>
 
 <a href="#" onclick="return false;" onmouseover="displayDiv(1); return false;">Free</a>
 |
