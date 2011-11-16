@@ -53,10 +53,11 @@ var current="First alpha release available now on the Android Market."
 
 var montharray = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 
-function countdown(yr,m,d) {
+function countdown(yr,m,d,tm) {
     theyear=yr;
     themonth=m;
     theday=d;
+    thetime=tm;
     var span = document.getElementById('countdownText');
     var today = new Date();
     var todayy = today.getYear();
@@ -68,7 +69,7 @@ function countdown(yr,m,d) {
     var todaymin=today.getMinutes();
     var todaysec=today.getSeconds();
     var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec;
-    futurestring=montharray[m-1]+" "+d+", "+yr;
+    futurestring=montharray[m-1]+" "+d+", "+yr+" "+tm;
     dd=Date.parse(futurestring)-Date.parse(todaystring);
     dday=Math.floor(dd/(60*60*1000*24)*1);
     dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
@@ -82,7 +83,7 @@ function countdown(yr,m,d) {
         txt = dday+ " days, "+dhour+" hours, "+dmin+" minutes, "+dsec+" seconds to " + before;
         span.innerText = span.textContent = txt;
     }
-    setTimeout("countdown(theyear,themonth,theday)",1000);
+    setTimeout("countdown(theyear,themonth,theday,thetime)",1000);
 }
 
 
@@ -91,7 +92,7 @@ function countdown(yr,m,d) {
 
 </head>
 
-<body onload="countdown(2011,11,19)">
+<body onload="countdown(2011,11,19, '18:00:00 +0200')">
 
 <div style="margin-left: auto; margin-right: auto; text-align: center">
 
