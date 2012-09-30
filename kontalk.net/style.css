@@ -50,3 +50,17 @@ a:hover {
     text-align: left;
     margin-bottom: 3px;
 }
+
+.platform {
+    border: 2px solid #0065ad;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.platform img {
+    width: 28px; height: 28px; vertical-align: middle
+}
