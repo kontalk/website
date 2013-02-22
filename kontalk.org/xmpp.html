@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>XMPP | The Kontalk Messaging Project</title>
+<meta name="description" content="A new way of communicating."/>
+<meta name="keywords" content="kontalk, smartphone, messaging, sms, instant messaging, decentralized network, free messaging network"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0;"/>
+<link rel="shortcut icon" href="favicon.ico"/>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+<!--<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" media="screen"/>-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27252726-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row-fluid pagination-centered">
+
+        <div class="page-header">
+            <a href="index.html"><img src="img/icon_small.png" alt="Kontalk"/></a>
+            <h3>The Kontalk Messaging Project</h3>
+            <h5>A new way of communicating.</h5>
+
+        </div>
+
+        <div class="box-medium">
+
+            <div class="info-box">
+                <span class="info-box-label">What is XMPP?</span>
+                Quoting from xmpp.org:
+                <blockquote>
+                The Extensible Messaging and Presence Protocol (XMPP) is an
+                open technology for real-time communication, which powers a
+                wide range of applications including instant messaging,
+                presence, multi-party chat, voice and video calls,
+                collaboration, lightweight middleware, content syndication,
+                and generalized routing of XML data.
+                </blockquote>
+                Shortly, XMPP is a protocol and a set of rules for routing
+                XML messages. It's extensible, it's standard, and it's
+                widely supported by the community and industry.
+            </div>
+
+            <div class="info-box">
+                <span class="info-box-label">Why XMPP?</span>
+                Mainly because it's a standard: this will bring many benefits,
+                one of them is clients will be easier to develop. Also it will
+                be possible to chat with other Jabber users (e.g. GTalk).
+            </div>
+
+            <div class="info-box">
+                <span class="info-box-label">Not 100% compliant</span>
+                Because of the nature of the <i>Kontalk</i> network, our
+                implementation will be slightly out of standard &mdash;
+                however still 100% compatible with all XMPP clients. Some glue
+                will be implemented in order to make the protocol more secure,
+                more reliable and really distributed (more like clustered).
+            </div>
+
+            <div class="info-box">
+                <span class="info-box-label">Clusterization</span>
+                The idea behind <i>Kontalk</i> has always been simple: one
+                user account, many servers to connect to. This implies
+                collaboration between all servers, including information
+                exchange. That's a custom extension to the XMPP protocol
+                designed ad-hoc for <i>Kontalk</i>.
+            </div>
+
+            <div class="info-box">
+                <span class="info-box-label">Security</span>
+                Many XMPP extensions are defined for various aspects of chat
+                security: message encryption, encrypted channels, and so on.
+                All of them requires client-side setup by the user and some
+                prior information exchange between clients in order to work.
+                Our XMPP extensions define some simple methods, safe enough
+                for messaging.
+            </div>
+
+            <div class="info-box">
+                <span class="info-box-label">How soon?</span>
+                Kontalk XMPP is still in a very alpha state. However, both
+                server and Android client source code can be found in
+                Gitorious. If you feel brave enough you may run the server
+                and start using the client by compiling it. A default public
+                test server is already built-in in the Android client
+                configuration.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="page-footer">
+    <div class="container-fluid pagination-centered">
+
+        <a href="about.html">About</a>
+        |
+        <a href="files">Downloads</a>
+        |
+        <a href="protocol.html">Protocol specifications</a>
+        |
+        <a href="http://www.kontalk.net/">Kontalk network</a>
+        |
+        <a href="faq.html">FAQ</a>
+
+    </div>
+</div>
+
+</body>
+</html>
