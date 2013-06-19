@@ -12,7 +12,6 @@
 }
 
 .info-box {
-  text-align: justify !important;
   text-align: left;
   position: relative;
   margin: 15px 0;
@@ -23,6 +22,11 @@
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+
+.justify {
+  text-align: justify !important;
+  text-align: left;
 }
 
 .info-box-label {
@@ -92,7 +96,8 @@ div.progressbar div.free {
 .year {
     text-align: center;
     font-size: 2em;
-    line-height: 1.5em;
-    height: 1.5em;
+    line-height: 1em;
+    padding-bottom: 10px;
+    padding-top: 6px;
     font-weight: bold;
 }
