@@ -1,75 +1,207 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-<title>The Kontalk Messaging Project</title>
-<meta name="description" content="A new way of communicating."/>
-<meta name="keywords" content="kontalk, smartphone, messaging, sms, instant messaging, decentralized network, free messaging network"/>
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=2.0;"/>
-<link rel="shortcut icon" href="favicon.ico"/>
 
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen"/>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-<!--<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" media="screen"/>-->
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>The Kontalk Messaging Project</title>
+	<meta name="description" content="A new way of communicating."/>
+	<meta name="keywords" content="kontalk, smartphone, messaging, sms, instant messaging, decentralized network, free messaging network"/>	
+	<meta name="author" content="Andrea Cappelli">
 
-<script type="text/javascript">
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-27252726-1']);
-  _gaq.push(['_trackPageview']);
+	<!-- CSS
+  ================================================== -->
+  	<!-- Responsive Skeleton -->
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<!-- Base Style -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<!-- Sliders Style -->
+	<link href="stylesheets/jquery.bxslider.css" rel="stylesheet" />
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-</script>
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/android-app-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/android-app.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="images/android-app-icon-114x114.png">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
 </head>
-
 <body>
 
-<div class="container-fluid">
-
-    <div class="row-fluid pagination-centered">
-
-        <div class="page-header">
-            <img src="img/icon.png" alt="Kontalk"/>
-            <h1>The Kontalk Messaging Project</h1>
-            <h3>A new way of communicating.</h3>
-            <h5>Available now on <a href="https://play.google.com/store/apps/details?id=org.kontalk">Google Play Store</a>.</h5>
-        </div>
-
-        <div class="box-medium">
-            <img src="img/qr-market.png" alt="Kontalk"/>
-        </div>
-
-        <div class="box-medium box-medium-next">
-        <a href="http://code.google.com/p/kontalk/wiki/XMPP"><img src="img/xmpp.png" alt="XMPP"/><br/><b>Coming soon</b></a>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="page-footer">
-    <div class="container-fluid pagination-centered">
-
-        <a href="http://code.google.com/p/kontalk/wiki/About">About</a>
-        |
-        <a href="http://code.google.com/p/kontalk/downloads">Downloads</a>
-        |
-        <a href="https://code.google.com/p/kontalk/">Project Page</a>
-        |
-        <a href="http://code.google.com/p/kontalk/wiki/Protocol">Protocol specifications</a>
-        |
-        <a href="http://www.kontalk.net/">Kontalk network</a>
-        |
-        <a href="http://code.google.com/p/kontalk/wiki/FAQ">FAQ</a>
-
-    </div>
-</div>
 
 
+	<!-- Primary Page Layout
+	================================================== -->
+		<header class="android"><!-- Header -->
+			<div class="container">
+				<div class="logo eleven columns"><!-- Logo -->
+					<img src="images/android-app.png"/>
+					<h1>Kontalk</h1>
+				</div><!-- End Logo -->
+				<div class="intro-text eleven columns"><!-- Intro -->
+					<h2 class="white">THE KONTALK MESSAGGING PROJECT</h2>
+					<h3>A new way of communicating.</h3>
+					<a href="#">
+						<div>
+							<a href="https://play.google.com/store/apps/details?id=org.kontalk"><img src="images/google_play.png"></a>
+						</div>
+					</a>
+				</div><!-- End Intro -->	
+			</div>
+		</header><!-- End Header -->
+		<section id="info"><!-- Info -->
+			<div class="container">
+				<div class="left eleven columns"><!-- Left -->
+					<div class="info-box first-box ten columns"><!-- White Hover Box -->
+						<div class="icon two columns">
+							<!--<i class="fa fa-tablet fa-4x"></i>-->
+						</div>
+						<div class="info seven columns padding-10">
+							<h3>SECURITY</h3>
+							<p>All data exchanged inside the Kontalk network is encrypted, and user IDs are always hashed, so that even the server owners cannot retrieve the phone number of a user.</p>
+						</div>
+						<div class="arrow border-5"></div>
+					</div>
+					<div class="info-box second-box ten columns">
+						<div class="icon two columns">
+							<!--<i class="fa fa-users fa-4x"></i>-->
+						</div>
+						<div class="info seven columns padding-10">
+							<h3>USER FRIENDLY</h3>
+							<p>Fruitcake lemon drops macaroon tiramisu candy bonbon tootsie roll gingerbread cake. Topping soufflé cheesecake ice cream. Topping powder jelly beans toffee.</p>
+						</div>
+						<div class="arrow border-5"></div>
+					</div>
+					<div class="info-box third-box ten columns">
+						<div class="icon two columns">
+							<!--<i class="fa fa-code fa-4x"></i>-->
+						</div>
+						<div class="info seven columns padding-10">
+							<h3>WELL CODED</h3>
+							<p>Fruitcake lemon drops macaroon tiramisu candy bonbon tootsie roll gingerbread cake. Topping soufflé cheesecake ice cream. Topping powder jelly beans toffee.</p>
+						</div>
+						<div class="arrow border-5"></div>
+					</div>
+				</div><!-- End Left -->
+				<div class="right five columns"><!-- Right -->
+					<div class="android-image">
+						<div class="slider-app">
+							<ul class="bxslider appslider">
+							    <li><img src="images/app/app1.jpg"></li>
+							    <li><img src="images/app/app2.jpg"></li>
+							    <li><img src="images/app/app3.jpg"></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- End Right -->
+			</div>
+		</section><!-- End Info -->
+	<section id="testimonials"><!-- Testimonials -->
+		<div class="container">
+				<ul class="bxslider testimonialsslider">
+					<li>
+					
+					<div class="thirteen columns">
+						<h3>What is Kontalk</h3>	
+							<blockquote> 
+							Kontalk is an effort to write an instant messaging system - primarly designed for embedded devices, especially smartphones. Though currently there is only an Android Client, it aims to be cross-platform compatible. iOS, Symbian and even a desktop client will be developed (developers wanted!).
+							</blockquote> 
+					</div></li>
+					<li>
+					
+					<div class="thirteen columns">
+						<h3>Web of Trust</h3>
+						<blockquote>The Kontalk network of servers is public: anyone can join with their own server. A server is untrusted at the beginning. By means of a voting system - based on strong asymmetric encryption - and by working actively in the network, it can become a trusted server and get more privileges.</blockquote> 
+					</div>
+					</li>
+			</div>
+		</div>
+	</section><!-- End Testimonials -->
+	<section id="team"><!-- Team -->
+		<div class="container">
+			<div class="team-member five columns"><!-- Team Member -->
+				<div class="picture five columns">
+					<img src="images/team/daniele.png">
+				</div>
+				<div class="description five columns">
+					<h3>Daniele Ricci</h3>
+					<p>Server and Android Developer</p>
+				</div>
+			</div>
+			<div class="team-member five columns"><!-- Team Member -->
+				<div class="picture five columns">
+					<img src="images/team/andrea.png">
+				</div>
+				<div class="description five columns">
+					<h3>Andrea Cappelli</h3>
+					<p>Android and Web Developer</p>
+				</div>
+			</div>
+			<div class="team-member five columns"><!-- Team Member -->
+				<div class="picture five columns">
+					<img src="images/team/giovanni.png">
+				</div>
+				<div class="description five columns">
+					<h3>Giovanni Lauricella</h3>
+					<p>Graphic Designer</p>
+				</div>
+			</div>		
+		</div>
+	</section><!-- End Testimonial -->
+	<!--<section id="video">
+		<div class="container">
+			<div class="iphone sixteen columns">
+				
+			</div>
+		</div>
+	</section>
+	<section id="mail">
+		<div class="container">
+			
+		</div>
+	</section>-->
+	<footer id="footer"><!-- Footer -->
+		<div class="container">
+			<div class="copyright eleven columns offset-by-one"><!-- Copyright -->
+				<h3>Kontalk</h3>
+				<p>Kontalk &copy; 2013. All rights reserved.
+			</div>
+			<div class="social four columns"><!-- Social Buttons -->
+				<ul>
+					<li class="border-5"><a href="https://www.facebook.com/kontalknet?ref=hl"><i class="fa fa-facebook"></i></a></li>
+					<li class="border-5"><a href="https://twitter.com/kontalknet"><i class="fa fa-twitter"></i></a></li>
+					<li class="border-5"><a href="https://plus.google.com/u/0/102201749813756709299/posts"><i class="fa fa-google-plus"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</footer><!-- End Footer -->
+
+
+
+<!-- End Document
+================================================== -->
+	<script type="text/javascript" src='js/jquery.min.js'></script>
+	<script type="text/javascript" src='js/scripts.js'></script>
+	<script type="text/javascript" src='js/jquery.bxslider.js'></script>
+	<script src="js/jquery.slides.js"></script>
+	<script src="js/retina-1.1.0.min.js"></script>
 </body>
 </html>
