@@ -35,7 +35,7 @@ h1, h2, h3, h4, h4{
 h2.white {
 	color: white; 
 }
-header{
+header {
 	width:100%;
 	height:auto;
 	padding-top:10px;
@@ -317,6 +317,17 @@ header .logo img{
 	margin-top:20px;
 }
 
+/* #Store
+================================================== */
+
+#store{
+	text-align: center;
+}
+
+#store h3{
+	font-size: 18px;
+	margin-top:20px;
+}
 
 
 /* #Testimonials
@@ -342,7 +353,7 @@ header .logo img{
 
 #testimonials cite{
 	font-size: 16px;
-	padding-top:10px;
+	padding-top: inherit;
 	font-weight: 300;
 }
 
