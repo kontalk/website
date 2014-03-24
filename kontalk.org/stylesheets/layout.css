@@ -165,11 +165,13 @@ header .logo img{
 	transition-duration: 0.2s;
 }
 
+/*
 #info .info-box:hover{
 	left:-20px;
 	transition:ease-in;
 	transition-duration: 0.2s;
 }
+*/
 
 #info .info-box h3{
 	color:#333;
