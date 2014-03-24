@@ -177,6 +177,15 @@ header .logo img{
 	color:#333;
 	font-size: 18px;
 	font-weight: 800;
+	text-transform: uppercase;
+}
+
+#info .info-box p.github {
+	margin: 0 0 10px;
+}
+
+#info .info-box p.github-buttons {
+	margin: 0 5px 10px;
 }
 
 #info .info-box .icon {
@@ -184,7 +193,7 @@ header .logo img{
 }
 
 #info .info-box .icon i{
-	margin-top:50%;
+	margin-top:25%;
 }
 
 #info .right{
@@ -324,6 +333,7 @@ header .logo img{
 
 #store{
 	text-align: center;
+	background:#dedede;
 }
 
 #store h3{
@@ -540,6 +550,12 @@ footer h3{
 
 /* #Media Queries
 ================================================== */
+
+	@media only screen and (min-width: 960px) {
+		#info .info-box .icon i{
+			display: none;
+		}
+	}
 
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
