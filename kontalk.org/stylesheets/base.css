@@ -258,3 +258,8 @@
 	
 
 
+/* Customizing bxslider */
+.slider-app .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.slider-app .bx-wrapper .bx-pager.bx-default-pager a.active {
+        background: #fff;
+}
