@@ -1,0 +1,804 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*
+*
+* Styling by Danny Postma
+* www.postcreative.nl
+*
+*
+*/
+
+/* Table of Content
+================================================== */
+p, a{
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+}
+	
+
+/* #Site Styles
+================================================== */
+
+
+/* #Header
+================================================== */
+h2.white {
+	color: white; 
+}
+header {
+	width:100%;
+	height:auto;
+	padding-top:10px;
+}
+
+header.android{
+	background:url("../images/android-header-bg.jpg") center top no-repeat;
+    background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+header.iphone{
+	background:url("../images/header-bg.jpg") right top no-repeat;
+    background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+
+header .intro-text{
+}
+
+header .intro-text h1{
+	font-size: 58px;
+	font-weight: 800;
+	line-height: 71px;
+	padding: 10px 0;
+	color: #fff;
+	margin-top: 40px;
+}
+
+header .intro-text strong{
+	font-weight: 700;
+}
+
+header .intro-text h3{
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 24px;
+	padding:0 0 10px 0;
+	color: #fff;
+	width: 400px;
+	margin-bottom: 20px;
+}
+
+
+header .devices{
+	height:auto;
+	text-align: center;
+}
+
+header .intro-text input[type="email"]{
+	color: #7d8895;
+	width:200px;
+	background: #fff;
+	padding: 6px 10px;
+	border: 0;
+	font-size: 1.1em;
+	font-family: 'Open Sans', sans-serif;
+	-moz-border-radius: 3px 0 0 3px;
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	float: left;
+	border:1px solid #888;
+}
+
+header .intro-text input[type="submit"]{
+	border: 0;
+	background: #eda529;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 0 10px 0;
+	margin:0px -2px;
+	font-weight: normal;
+	font-size: 12px;
+	letter-spacing: 1px;
+	outline: 0;
+	text-align: :center;
+	width: 100px;
+	-moz-border-radius: 0 3px 3px 0;
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	float: left;
+	cursor: pointer;
+	}
+	
+header .logo h1{
+	display: inline;
+	margin-left:15px;
+	font-size: 36px;
+	color: #fff;
+}
+
+header .logo img{
+	position: relative;
+	top:10px;
+}
+
+/* #Info
+================================================== */
+
+#info{
+	width:100%;
+	background:#1C9DF8;
+	/*background:#dedede;*/
+	height:auto;
+	/*margin-top: 3px;*/
+}
+
+#info .left{
+	margin-top:60px;
+}
+
+#info .info-box{
+	background:#f0f9ff;
+	height:auto;
+	-moz-border-radius: 5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin-top:40px;
+	color:#333;
+	position: relative;
+	top:0px;
+	z-index: 2;
+	transition:ease-in;
+	transition-duration: 0.2s;
+}
+
+/*
+#info .info-box:hover{
+	left:-20px;
+	transition:ease-in;
+	transition-duration: 0.2s;
+}
+*/
+
+#info .info-box h3{
+	color:#333;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+#info .info-box p.github {
+	margin: 0 0 10px;
+}
+
+#info .info-box p.github-buttons {
+	margin: 0 5px 10px;
+}
+
+#info .info-box .icon {
+	text-align: center;
+}
+
+#info .info-box .icon i{
+	margin-top:25%;
+}
+
+#info .right{
+	margin-top:40px;
+}
+
+#info .iphone-image{
+	background:url(../images/iphone.png) no-repeat;
+	height:627px;
+	width:295px;
+	float:right;
+}
+
+#info .android-image{
+	background:url(../images/android.png) no-repeat;
+	height:572px;
+	width:295px;
+	float:right;
+	margin-top:40px;
+}
+
+#info .android-image .slider-app{
+	position:relative;
+	left: 16px;
+	top: 50px;
+	width:270px;
+}
+
+#info .iphone-image .slider-app{
+	position:relative;
+	left:25px;
+	top:92px;
+	width:245px;
+}
+
+
+#slides > a, #slides > ul{
+	display: none !important;
+}
+
+.arrow {
+	background:#f0f9ff;
+	right: -17px;
+	margin-top: -20px;
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	overflow: hidden;
+}
+
+.buy:hover{
+	background: #279ed1;
+	color:#fff;
+}
+
+.trial:hover{
+	background: #eaa510;
+	color:#fff;
+}
+
+.appstore-button{
+	background: #1C9DF8;
+	color:#fff;
+	width:150px;
+	padding: 0px 20px;
+}
+
+
+
+
+
+.appstore-button span{
+	width:50px;
+	margin-left:10px;
+	color:#fff;
+	position: relative;
+	top:-18px;
+}
+
+.appstore-button strong{
+	margin-left:34px;
+	font-size: 23px;
+	color:#fff;
+}
+
+.trial{
+	background: #f8b21c;
+	color:#fff;
+}
+
+.buy:visited, .trial:visited{
+	color:#fff;
+}
+
+.b-button{
+	padding:10px 20px;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	margin-right:5px;
+}
+
+.appstore-button i{
+	padding-right:5px;
+	color:#fff;
+	position: relative;
+	top:10px;
+}
+
+/* #Team
+================================================== */
+
+#team{
+	text-align: center;
+	/*background: #f4f4f4;*/
+	background:#dedede;
+}
+
+#team img{
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border-radius: 150px;
+}
+
+#team h3{
+	font-size: 18px;
+	margin-top:20px;
+}
+
+/* #Store
+================================================== */
+
+#store{
+	text-align: center;
+	background:#dedede;
+}
+
+#store h3{
+	font-size: 18px;
+	margin-top:20px;
+}
+
+
+/* #Testimonials
+================================================== */
+
+
+
+#testimonials .image img{
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-ms-border-radius: 150px;
+    -o-border-radius: 150px;
+	border-radius: 150px;
+}
+
+#testimonials blockquote{
+	padding:10px 5px;
+	border:0;
+	font-style: normal;
+	font-weight: 500;
+	color:#333;
+}
+
+#testimonials cite{
+	font-size: 16px;
+	padding-top: inherit;
+	font-weight: 300;
+}
+
+
+
+/* #Video
+================================================== */
+
+
+
+#video{
+	background:#1C9DF8;
+	color:#fff;
+}
+
+
+#video h1{
+	font-size: 28px;
+	color:#fff;
+}
+
+#video .iphone{
+	text-align: center;
+	height:306px;
+}
+
+#video .video,
+#video .video-android{
+	position: relative;
+	top: -310px;
+	left: -1px;	
+}
+
+#video .video-android iframe{
+	margin-top: -18px;
+	width: 703px;
+	height: 323px;
+}
+
+
+#video .video iframe{
+	width:600px;
+	height:305px;
+}
+
+/* #Video VERTICAL
+================================================== */
+
+
+
+#video-vertical{
+	background:#1C9DF8;
+	color:#fff;
+}
+
+
+#video-vertical h1{
+	font-size: 28px;
+	color:#fff;
+}
+
+#video-vertical .iphone{
+	text-align: center;
+	height: 410px;
+}
+
+#video-vertical .video,
+#video-vertical .video-android{
+	position: relative;
+	top: -389px;
+	left: 3px;
+}
+
+#video-vertical .video-android iframe{
+	margin-top: -18px;
+	width: 232px;
+	height: 403px;
+}
+
+
+#video-vertical .video iframe{
+	width: 214px;
+	height: 384px;
+}
+
+/* #Mail
+================================================== */
+
+#mail, #mail-vertical{
+	background: url("../images/mail-pattern.png") left top repeat-x;
+}
+
+#mail h3, #mail-vertical h3{
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#mail .email-text, #mail-vertical .email-text{
+	margin-left:100px;
+}
+
+#mail h3 strong, #mail-vertical h3 strong{
+	font-weight: 600;
+}
+
+#mail .email-input, #mail-vertical .email-input{
+	margin-top:4px;
+}
+
+#mail .email-input input, #mail-vertical .email-input input{
+	display: inline-block;
+}
+
+#mail .email-input input[type="submit"], #mail-vertical .email-input input[type="submit"]{
+	padding:7px 12px 7px 12px;
+	background:#1C9DF8;
+	border:0;
+	color:#fff;
+	font-weight: 500;
+}
+
+
+/* #Footer
+================================================== */
+
+
+
+
+footer .social{
+	margin-top:5px;
+}
+footer .social li{
+	width:30px;
+	height:30px;
+	background:none;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	margin:0px 3px;
+	border:1px solid #999;
+
+}
+
+footer .copyright p{
+	color:#999;
+	display: inline;
+	margin-top:-10px;
+}
+
+
+footer{
+	background:#222;
+	
+}
+footer .container{
+	padding:20px 0 0px 0;
+}
+
+footer hr{
+	width:300px;
+	margin:10px auto;	
+}
+
+footer .social a{
+	padding:9px;
+}
+
+footer .social i{
+	color:#999;
+	margin-top:8px;
+}
+
+footer h3{
+	color:#999;
+	display: inline-block;
+	padding-right:20px;
+}
+
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	@media only screen and (min-width: 960px) {
+		#info .info-box .icon i{
+			display: none;
+		}
+	}
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		header{
+			background: url("../images/header-bg.jpg") center top no-repeat;
+			}
+		#info .info-box{
+			width:400px;
+			top:-45px;
+		}
+		#info .info-box .info{
+			width:269px;
+		}
+		#video .iphone img{
+			width:755px;
+			height:auto;
+		}
+		#video .video {
+			position: relative;
+			top: -278px;
+			left: 1px;
+			}
+		#video .video iframe {
+			width: 535px;
+			height: 273px;
+			}
+		#video .container{
+			padding:34px 0px 2px;
+		}
+		#mail .email-input {
+			width: 290px;
+			}
+		#mail .email-text{
+			width: 429px;
+		}
+		#mail .email-text{
+			margin:0;
+		}
+		#video .video-android iframe {
+			margin-top: -18px;
+			width: 624px;
+			height: 287px;
+		}
+		#video .video-android {
+			position: relative;
+			top: -275px;
+			left: 5px;
+		}
+		
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#info .info-box{
+			width:inherit;
+		}
+		#info .info-box .icon i{
+			margin-top:20px;
+		}
+		#info .info-box .info{
+			text-align: center;
+			width:auto;
+			padding:10px;
+		}
+		#info .arrow{
+			display: none;
+		}
+		#info .info-box:hover{
+			left:0;
+		}
+		#info .right{
+			width:300px;
+			margin-left:50px;
+		}
+		#testimonials{
+			text-align: center;
+		}
+		.bx-wrapper img{
+			display: inline !important;
+		}
+		#video{
+			height:197px;
+		}
+		#video .iphone img{
+			width:400px;
+		}
+		#video .video {
+			position: relative;
+			top: -150px;
+			left: -2px;
+			}
+		#video .video-android{
+			position: relative;
+			top: -139px;
+			left: -1px;
+		}
+		#video .video iframe {
+			width: 285px;
+			height: 145px;
+			}
+		#video .video-android iframe {
+			width: 331px;
+			height: 152px;
+			margin-left: 2px;
+			}
+		#mail .email-text, #mail-vertical .email-text {
+			margin: -102px -4px;
+			text-align: center;
+		}
+		#mail .email-input, #mail-vertical .email-input{
+			margin-left: 56px;
+			}
+		footer{
+			text-align: center;
+		}
+		#video .iphone{
+			height:auto;
+		}
+		#video-vertical .iphone {
+			text-align: center;
+			height: 410px;
+			}
+			
+	
+			
+		#video-vertical .video, #video-vertical .video-android {
+			position: relative;
+			top: -389px;
+			left: 0px;
+			}
+			
+		#mail-vertical .email-input {
+			margin-left: 0;
+			margin-top: 54px;
+		}
+		
+		#mail-vertical .email-text {
+		width: auto;
+		margin-top: -22px;
+		}
+		
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#info .right{
+			margin: 0;
+		}
+		#video .iphone img{
+			width: 400px;
+			margin-left: -50px;
+		}
+		
+		#mail .email-text{
+			width:auto;
+		}
+		#mail .email-input{
+			margin-left:0;
+		}
+		footer .copyright p{
+			display: inherit;
+		}
+		header .intro-text h1{
+			font-size: 40px;
+			line-height: 50px;
+		}
+		header .intro-text h3{
+			width:auto;
+		}
+		header{
+			text-align: center;
+		}
+		
+		.appstore-button{
+			margin:0 auto;
+		}
+		.appstore-button strong{
+			font-size: 20px;
+		}
+		
+		#video .video-android {
+			position: relative;
+			top: -101px;
+			left: -1px;
+			padding-bottom: 18px;
+			}
+		
+		#video .video iframe {
+			width: 215px;
+			height: 108px;
+			}	
+		#video .video-android iframe {
+			width: 248px;
+			height: 114px;
+			margin-left: 2px;
+			}
+		#video .video {
+			position: relative;
+			top: -113px;
+			left: -2px;
+			}
+		#video .iphone img {
+			width: 300px;
+			margin-left: 0;
+			}
+		#video {
+			height: 155px;
+			}
+			
+			#video-vertical .video, #video-vertical .video-android {
+			position: relative;
+			top: -389px;
+			left: 53px;
+			}
+			
+		#video-vertical .iphone {
+			text-align: center;
+			height: 410px;
+			margin-left:-50px;
+			}
+	}
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
