@@ -552,8 +552,8 @@ footer h3{
 ================================================== */
 
 	@media only screen and (min-width: 960px) {
-		#info .info-box .icon i{
-			display: none;
+		.container .eight.columns {
+				width: 420px;
 		}
 	}
 
