@@ -101,6 +101,7 @@
 	footer a:visited {color: #999;}
 	footer a:hover {color: #777;}
 	footer li { margin-bottom: 4px; }
+	header a:link, header a:visited {color: #ddd; text-decoration:underline;}
 
 
 /* #Lists
