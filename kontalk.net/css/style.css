@@ -1,3 +1,7 @@
+.center-block {
+    float: none;
+}
+
 .box-medium {
     max-width: 500px;
     margin-left: auto;
@@ -46,8 +50,8 @@
 }
 
 .platform {
-    min-height: 50px !important;
-    height: 50px;
+    min-height: 105px !important;
+    height: 105px;
 }
 
 .platform img.emblem {
@@ -100,4 +104,8 @@ div.progressbar div.free {
     padding-bottom: 10px;
     padding-top: 6px;
     font-weight: bold;
+}
+
+div.donate-block {
+    margin-bottom: 10px;
 }

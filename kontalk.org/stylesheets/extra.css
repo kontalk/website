@@ -1,0 +1,23 @@
+
+.alert {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #1C9DF8;
+    width: 100%;
+    text-align: center;
+}
+
+.alert .info-box{
+    background:#f0f9ff;
+    height:auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    color:#333;
+    position: relative;
+    top:0px;
+    z-index: 2;
+    transition:ease-in;
+    transition-duration: 0.2s;
+    padding: 20px 0;
+}
